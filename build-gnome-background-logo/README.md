@@ -8,9 +8,9 @@ Building the GNOME Shell "Background Logo" extension from Fedora on deb-based Li
 
 ## 1. Update, upgrade, and install build packages
 - Open a terminal and issue the following commands in order:
-        `sudo apt update`
-        `sudo apt upgrade -y`
-        `sudo apt install gnome-tweaks gnome-shell-extension-manager meson ninja-build`
+        `sudo apt update`  
+        `sudo apt upgrade -y`  
+        `sudo apt install gnome-tweaks gnome-shell-extension-manager meson ninja-build`  
 - `gnome-tweaks` ("Tweaks") is a popular application that allows additional configuration of your GNOME desktop environment outside of the default Settings menu.
 - `gnome-shell-extension-manager` ("Extension Manager") is a local application that allows for management of installed GNOME Shell Extensions, and also allows you to browse for and install extensions without having to use the website and install the "GNOME Shell integration".
 - `meson` and `ninja-build` are command-line build systems focused on speed, reliability, and ease of use.
@@ -26,16 +26,16 @@ Building the GNOME Shell "Background Logo" extension from Fedora on deb-based Li
 - In the terminal, from the ~/.tmp directory, change directories into the extracted source code directory (your folder name may be slightly different depending on your GNOME version and the source code you cloned in Step 2): `cd background-logo-extension-42.0.tar.xz`
 - Verify the contents of the source code directory with `ls -a`; it should match the below:
         ```
-        .        .eslintrc.json  lint                  metadata.json.in  schemas
-        ..       extension.js    meson.build           NEWS
-        COPYING  .gitignore      meson-postinstall.sh  prefs.js
+        .        .eslintrc.json  lint                  metadata.json.in  schemas  
+        ..       extension.js    meson.build           NEWS  
+        COPYING  .gitignore      meson-postinstall.sh  prefs.js  
         ```
 - Compile and build the extension to a "build" directory: `meson build`
 - Re-verify the directory's contents with `ls -a`; there should now be a "build" directory listed:
         ```
-        .      COPYING         .gitignore   meson-postinstall.sh  prefs.js
-        ..     .eslintrc.json  lint         metadata.json.in      schemas
-        build  extension.js    meson.build  NEWS
+        .      COPYING         .gitignore   meson-postinstall.sh  prefs.js  
+        ..     .eslintrc.json  lint         metadata.json.in      schemas  
+        build  extension.js    meson.build  NEWS  
         ```
 - Install the extension from the build directory: `sudo ninja -C "build" install`
 - Reboot your PC or log out and log back in to re-poll the extensions (I personally recommend reboot).
