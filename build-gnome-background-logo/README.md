@@ -7,7 +7,7 @@ Building the GNOME Shell "Background Logo" extension from Fedora on deb-based Li
 - an internet connection
 
 ## 1. Update, upgrade, and install build packages
-- Open a terminal and issue the following commands in order:
+- Open a terminal and issue the following commands in order:  
         `sudo apt update`  
         `sudo apt upgrade -y`  
         `sudo apt install gnome-tweaks gnome-shell-extension-manager meson ninja-build`  
@@ -24,14 +24,14 @@ Building the GNOME Shell "Background Logo" extension from Fedora on deb-based Li
 
 ## 3. Compile and build the extension
 - In the terminal, from the ~/.tmp directory, change directories into the extracted source code directory (your folder name may be slightly different depending on your GNOME version and the source code you cloned in Step 2): `cd background-logo-extension-42.0.tar.xz`
-- Verify the contents of the source code directory with `ls -a`; it should match the below:
+- Verify the contents of the source code directory with `ls -a`; it should match the below:  
         ```
         .        .eslintrc.json  lint                  metadata.json.in  schemas  
         ..       extension.js    meson.build           NEWS  
         COPYING  .gitignore      meson-postinstall.sh  prefs.js  
         ```
 - Compile and build the extension to a "build" directory: `meson build`
-- Re-verify the directory's contents with `ls -a`; there should now be a "build" directory listed:
+- Re-verify the directory's contents with `ls -a`; there should now be a "build" directory listed:  
         ```
         .      COPYING         .gitignore   meson-postinstall.sh  prefs.js  
         ..     .eslintrc.json  lint         metadata.json.in      schemas  
