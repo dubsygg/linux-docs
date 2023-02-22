@@ -63,11 +63,11 @@ Using rclone and systemd services to automate OneDrive mount and sync on boot of
 - Issue an `ls -a` command and confirm you see "OneDrive" listed as a directory.  
 
 ## 4. Create and activate the systemd service  
-- Reference the [onedrive.service](https://github.com/dubsygg/rclone-onedrive-sync/blob/main/onedrive.service) sample file.  
+- Reference the [onedrive.service](https://github.com/dubsygg/linux-docs/blob/main/rclone-onedrive-sync/onedrive.service) sample file.  
 - Switch to root user: `sudo su -`  
 - Change directories to your default systemd services directory: `cd /etc/systemd/system/`  
 - Using your preferred CLI text editor (nano, vim, etc), create a file called "onedrive.service" (for my example, I prefer vim): `vim onedrive.service`  
-- Paste the entire contents of the [onedrive.service](https://github.com/dubsygg/rclone-onedrive-sync/blob/main/onedrive.service) sample file into your text editor; you can right-click and select "Paste" or use `Ctrl+Shift+V`; change the following:  
+- Paste the entire contents of the [onedrive.service](https://github.com/dubsygg/linux-docs/blob/main/rclone-onedrive-sync/onedrive.service) sample file into your text editor; you can right-click and select "Paste" or use `Ctrl+Shift+V`; change the following:  
   - username - change this to your username  
   - usergroup - change this to your user's primary group (more than likely the same as your username)  
   - RemoteName - change this to whatever you named your "remote" during the `rclone config` in Step 2; the name is **Case Sensitive**  
