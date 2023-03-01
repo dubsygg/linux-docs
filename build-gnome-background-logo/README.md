@@ -23,7 +23,7 @@ Building the GNOME Shell "Background Logo" extension from Fedora on deb-based Li
 - Extract the source code: `tar -xvf background-logo-extension-42.0.tar.xz`
 
 ## 3. Compile and build the extension
-- In the terminal, from the ~/.tmp directory, change directories into the extracted source code directory (your folder name may be slightly different depending on your GNOME version and the source code you cloned in Step 2): `cd background-logo-extension-42.0.tar.xz`
+- In the terminal, from the ~/.tmp directory, change directories into the extracted source code directory (your folder name may be slightly different depending on your GNOME version and the source code you cloned in Step 2): `cd background-logo-extension-42.0`
 - Verify the contents of the source code directory with `ls -a`; it should match the below:  
         ```
         .        .eslintrc.json  lint                  metadata.json.in  schemas  
