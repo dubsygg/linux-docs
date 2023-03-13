@@ -21,7 +21,7 @@ Burning a bootable Windows OS drive from within a Linux distribution
 ## 2. Wipe and partition the USB drive
 - This step assumes you have GParted installed; if you do not, open a terminal and issue the following command: `sudo apt install gparted dosfstools mtools`  
 - Take your USB drive and plug into your PC  
-- Take care to back up any important files or data from this USB drive and we will be formatting and wiping it clean in the following steps (I AM NOT RESPONSIBLE FOR YOUR LOSS OF DATA)  
+- Take care to back up any important files or data from this USB drive as we will be formatting and wiping it clean in the following steps (I AM NOT RESPONSIBLE FOR YOUR LOSS OF DATA)  
 - In a terminal, verify which drive is the USB by issuing `lsblk`; the drive will register as "/dev/sdX", where "X" is the actual letter assigned to that drive  
 - Open GParted, wait for the disk scan to complete, then select your USB drive ("/dev/sdX" in the upper-right drop-down menu)  
 - If a partition is listed, right click and select "unmount"  
@@ -41,6 +41,6 @@ Burning a bootable Windows OS drive from within a Linux distribution
 ## 4. Test the boot media
 - Take the USB drive and plug into the PC for which you want to load Windows OS  
 - Power on the PC and begin repeatedly pressing the boot menu hotkey (will typically be either Esc, Del, F2 or F12 on most systems; consult your PC's documentation)  
-- If all of the abovge steps were followed, you should see as Windows logo and the spinning circle of dots indicating boot into the "WinPE" (Windows Preboot Environment)  
+- If all of the above steps were followed, you should see as Windows logo and the spinning circle of dots indicating boot into the "WinPE" (Windows Preboot Environment)  
 
 ## 5. Disclaimers (WIP) 
