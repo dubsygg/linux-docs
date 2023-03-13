@@ -19,6 +19,7 @@ Burning a bootable Windows OS drive from within a Linux distribution
 - Compare the calculated output to the SHA hash value on the website; if the file hash matches, proceed to Step 2.
 
 ## 2. Wipe and partition the USB drive
+- This step assumes you have GParted installed; if you do not, open a terminal and issue the following command: `sudo apt install gparted dosfstools mtools`  
 - Take your USB drive and plug into your PC  
 - Take care to back up any important files or data from this USB drive and we will be formatting and wiping it clean in the following steps (I AM NOT RESPONSIBLE FOR YOUR LOSS OF DATA)  
 - In a terminal, verify which drive is the USB by issuing `lsblk`; the drive will register as "/dev/sdX", where "X" is the actual letter assigned to that drive  
